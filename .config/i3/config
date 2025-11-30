@@ -47,6 +47,9 @@ exec --no-startup-id dex --autostart --environment i3
 # Network Manager Applet 
 exec --no-startup-id nm-applet
 
+# Blueman Manager Applet
+exec --no-startup-id blueman-applet
+
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
