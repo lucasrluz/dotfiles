@@ -28,4 +28,7 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 
 yay -S flat-remix-gtk flat-remix
 
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+
 echo "Adicionar i3 ao .xinitrc"
