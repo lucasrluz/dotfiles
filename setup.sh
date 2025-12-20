@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo pacman -S git neovim xorg xorg-xinit i3-wm i3blocks dmenu j4-dmenu-desktop alacritty fish feh chromium thunar thunar-volman gvfs thunar-archive-plugin file-roller ttf-ibm-plex gcc acpi tlp bluez bluez-utils pulseaudio pulseaudio-alsa pulseaudio-bluetooth
+sudo pacman -S git neovim xorg xorg-xinit i3-wm i3blocks dmenu j4-dmenu-desktop alacritty fish feh chromium thunar thunar-volman gvfs thunar-archive-plugin file-roller ttf-ibm-plex ttf-ibmplex-mono-nerd gcc acpi tlp bluez bluez-utils pulseaudio pulseaudio-alsa pulseaudio-bluetooth blueman pavucontrol
 
 git clone https://github.com/lucasrluz/wallpaper.git
 
