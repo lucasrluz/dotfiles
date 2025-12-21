@@ -61,7 +61,8 @@ bindsym $mod+Return exec alacritty
 
 # Open Application
 #bindsym $mod+d exec --no-startup-id rofi -show
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
+#bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
+bindsym $mod+d exec --no-startup-id rofi -show
 
 # Close window
 bindsym $mod+q kill
