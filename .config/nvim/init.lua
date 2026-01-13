@@ -1,6 +1,13 @@
-require("config.core.options")
-require("config.core.lazy")
-require("config.plugins.treesitter")
-require("config.plugins.mini-pairs")
-require("config.plugins.vesper-theme")
+require("config")
+require("plugins")
+require("plugin-lsp")
 
+require("solarized-osaka").setup({
+  transparent = false,
+  styles = {
+    comments = { italic = false },
+    keywords = { italic = false },
+  },
+})
+
+vim.cmd[[colorscheme solarized-osaka]]
