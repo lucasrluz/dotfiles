@@ -47,14 +47,11 @@ exec --no-startup-id nm-applet
 # Blueman Manager Applet
 exec --no-startup-id blueman-applet
 
-# Polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-
 # xset
 exec --no-startup-id xset s off -dpms
 
 # Feh
-exec --no-startup-id feh --bg-fill ~/wallpaper/The\ School\ of\ Athens\ -\ Raffaello\ Sanzio\ da\ Urbino.jpg
+exec_always --no-startup-id ~/.fehbg 
 
 # Set a key to move a window
 floating_modifier $mod
