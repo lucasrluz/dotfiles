@@ -1,6 +1,7 @@
 ### Variables
 
 default_border pixel 1
+gaps inner 6
 
 client.focused          #B0B0B0 #B0B0B0 #B0B0B0 #B0B0B0 #B0B0B0
 client.focused_inactive #000000 #000000 #000000 #000000 #000000
