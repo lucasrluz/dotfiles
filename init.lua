@@ -35,6 +35,9 @@ vim.pack.add({
 
     -- Diagnostic
     { src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
+
+    -- Theme
+    { src = "https://github.com/rose-pine/neovim" },
 })
 
 -- Telescope
@@ -75,3 +78,14 @@ require("tiny-inline-diagnostic").setup({
     preset = "powerline",
 })
 vim.diagnostic.config({ virtual_text = false })
+
+-- Theme
+require("rose-pine").setup({
+    variant = "main", -- main, moon, or dawn
+    styles = {
+        bold = false,
+        italic = false,
+        transparency = false
+    }
+})
+vim.cmd("colorscheme rose-pine")
