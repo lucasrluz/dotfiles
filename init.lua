@@ -24,6 +24,17 @@ vim.pack.add({
     -- Lualine
     { src = "https://github.com/nvim-tree/nvim-web-devicons" },
     { src = "https://github.com/nvim-lualine/lualine.nvim" },
+
+    -- Autopairs
+    { src = "https://github.com/nvim-mini/mini.nvim" },
+
+    -- LSP, Mason
+    { src = "https://github.com/neovim/nvim-lspconfig" },
+    { src = "https://github.com/mason-org/mason.nvim" },
+    { src = "https://github.com/mason-org/mason-lspconfig.nvim" },
+
+    -- Diagnostic
+    { src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
 })
 
 -- Telescope
@@ -49,3 +60,18 @@ require("lualine").setup({
         lualine_z = {"location"}
     },
 })
+
+-- Autopairs
+require("mini.pairs").setup()
+
+-- LSP, Mason
+require("mason").setup()
+require("mason-lspconfig").setup {
+    ensure_installed = { "lua_ls", "clangd" },
+}
+
+-- Diagnostic
+require("tiny-inline-diagnostic").setup({
+    preset = "powerline",
+})
+vim.diagnostic.config({ virtual_text = false })
