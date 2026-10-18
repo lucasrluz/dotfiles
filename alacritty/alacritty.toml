@@ -1,0 +1,11 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/rose-pine.toml"
+]
+
+[font]
+normal = { family = "BlexMono Nerd Font", style = "Regular" }
+size = 13
+
+[window]
+dimensions = { columns = 100, lines = 30 }
