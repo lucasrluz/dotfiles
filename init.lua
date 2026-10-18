@@ -64,13 +64,14 @@ require("lualine").setup({
     },
 })
 
--- Autopairs
+-- Autopairs, Completion
 require("mini.pairs").setup()
+require("mini.completion").setup()
 
 -- LSP, Mason
 require("mason").setup()
 require("mason-lspconfig").setup {
-    ensure_installed = { "lua_ls", "clangd" },
+    ensure_installed = { "lua_ls", "clangd", "gopls" },
 }
 
 -- Diagnostic
