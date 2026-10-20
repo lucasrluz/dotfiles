@@ -1,10 +1,10 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/rose-pine.toml"
+    "~/.config/alacritty/themes/lackluster.toml"
 ]
 
 [font]
-normal = { family = "BlexMono Nerd Font", style = "Regular" }
+normal = { family = "IBM Plex Mono", style = "Text" }
 size = 13
 
 [window]
