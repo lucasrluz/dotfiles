@@ -37,7 +37,7 @@ vim.pack.add({
     { src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
 
     -- Theme
-    { src = "https://github.com/rose-pine/neovim" },
+    { src = "https://github.com/slugbyte/lackluster.nvim" },
 })
 
 -- Telescope
@@ -81,12 +81,4 @@ require("tiny-inline-diagnostic").setup({
 vim.diagnostic.config({ virtual_text = false })
 
 -- Theme
-require("rose-pine").setup({
-    variant = "main", -- main, moon, or dawn
-    styles = {
-        bold = false,
-        italic = false,
-        transparency = false
-    }
-})
-vim.cmd("colorscheme rose-pine")
+vim.cmd.colorscheme("lackluster-hack")
