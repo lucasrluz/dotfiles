@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/lackluster.toml"
+    "~/.config/alacritty/themes/tokyonight_moon.toml"
 ]
 
 [font]
