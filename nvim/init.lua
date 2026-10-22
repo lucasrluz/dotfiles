@@ -37,7 +37,7 @@ vim.pack.add({
     { src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
 
     -- Theme
-    { src = "https://github.com/slugbyte/lackluster.nvim" },
+    { src = "https://github.com/folke/tokyonight.nvim" },
 })
 
 -- Telescope
@@ -81,4 +81,11 @@ require("tiny-inline-diagnostic").setup({
 vim.diagnostic.config({ virtual_text = false })
 
 -- Theme
-vim.cmd.colorscheme("lackluster-hack")
+require("tokyonight").setup({
+    style = "moon",
+    styles = {
+        comments = { italic = false },
+        keywords = { italic = false },
+      },
+})
+vim.cmd.colorscheme("tokyonight")
