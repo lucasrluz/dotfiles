@@ -37,7 +37,10 @@ vim.pack.add({
     { src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
 
     -- Theme
-    { src = "https://github.com/folke/tokyonight.nvim" },
+    {
+        src = "https://github.com/loctvl842/monokai-pro.nvim",
+        version = vim.version.range("2.1.3")
+    },
 })
 
 -- Telescope
@@ -81,11 +84,17 @@ require("tiny-inline-diagnostic").setup({
 vim.diagnostic.config({ virtual_text = false })
 
 -- Theme
-require("tokyonight").setup({
-    style = "moon",
+require("monokai-pro").setup({
     styles = {
-        comments = { italic = false },
-        keywords = { italic = false },
-      },
+        comment = { italic = false },
+        keyword = { italic = false },
+        type = { italic = false },
+        storageclass = { italic = false },
+        structure = { italic = false },
+        parameter = { italic = false },
+        annotation = { italic = false },
+        tag_attribute = { italic = false },
+    },
+    filter = "spectrum",
 })
-vim.cmd.colorscheme("tokyonight")
+vim.cmd.colorscheme("monokai-pro")

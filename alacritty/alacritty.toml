@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/.config/alacritty/themes/tokyonight_moon.toml"
+    "~/.config/alacritty/themes/monokai_pro.toml"
 ]
 
 [font]
