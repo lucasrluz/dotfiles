@@ -27,20 +27,6 @@ vim.pack.add({
 
     -- Autopairs
     { src = "https://github.com/nvim-mini/mini.nvim" },
-
-    -- LSP, Mason
-    { src = "https://github.com/neovim/nvim-lspconfig" },
-    { src = "https://github.com/mason-org/mason.nvim" },
-    { src = "https://github.com/mason-org/mason-lspconfig.nvim" },
-
-    -- Diagnostic
-    { src = "https://github.com/rachartier/tiny-inline-diagnostic.nvim" },
-
-    -- Theme
-    {
-        src = "https://github.com/loctvl842/monokai-pro.nvim",
-        version = vim.version.range("2.1.3")
-    },
 })
 
 -- Telescope
@@ -67,34 +53,8 @@ require("lualine").setup({
     },
 })
 
--- Autopairs, Completion
+-- Autopairs
 require("mini.pairs").setup()
-require("mini.completion").setup()
-
--- LSP, Mason
-require("mason").setup()
-require("mason-lspconfig").setup {
-    ensure_installed = { "lua_ls", "clangd", "gopls" },
-}
-
--- Diagnostic
-require("tiny-inline-diagnostic").setup({
-    preset = "powerline",
-})
-vim.diagnostic.config({ virtual_text = false })
 
 -- Theme
-require("monokai-pro").setup({
-    styles = {
-        comment = { italic = false },
-        keyword = { italic = false },
-        type = { italic = false },
-        storageclass = { italic = false },
-        structure = { italic = false },
-        parameter = { italic = false },
-        annotation = { italic = false },
-        tag_attribute = { italic = false },
-    },
-    filter = "spectrum",
-})
-vim.cmd.colorscheme("monokai-pro")
+vim.cmd.colorscheme("alice")
