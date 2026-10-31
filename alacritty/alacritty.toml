@@ -1,8 +1,3 @@
-[general]
-import = [
-    "~/.config/alacritty/themes/monokai_pro.toml"
-]
-
 [font]
 normal = { family = "IBM Plex Mono", style = "Text" }
 size = 13
@@ -12,3 +7,35 @@ dimensions = { columns = 100, lines = 30 }
 
 [terminal]
 shell = "/bin/fish"
+
+# Theme
+# Colors (Alabaster)
+# author tonsky
+
+[colors.primary]
+background = "#EBEBEB"
+foreground = "#141414"
+
+[colors.cursor]
+text = "#EBEBEB"
+cursor = "#141414"
+
+[colors.normal]
+black = "#000000"
+red = "#AA3731"
+green = "#448C27"
+yellow = "#CB9000"
+blue = "#325CC0"
+magenta = "#7A3E9D"
+cyan = "#0083B2"
+white = "#BBBBBB"
+
+[colors.bright]
+black = "#777777"
+red = "#F05050"
+green = "#60CB00"
+yellow = "#FFBC5D"
+blue = "#007ACC"
+magenta = "#E64CE6"
+cyan = "#00AACB"
+white = "#FFFFFF"
