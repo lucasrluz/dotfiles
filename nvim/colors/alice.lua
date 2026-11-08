@@ -1,7 +1,6 @@
-
 -- =========================================================
 -- Alice.nvim
--- Minimalist Light Colorscheme
+-- Minimalist Dark Colorscheme
 -- =========================================================
 
 vim.cmd("highlight clear")
@@ -10,13 +9,13 @@ if vim.fn.exists("syntax_on") then
     vim.cmd("syntax reset")
 end
 
-vim.o.background = "light"
+vim.o.background = "dark"
 vim.g.colors_name = "alice"
 
 -- Palette
 local colors = {
-    background = "#EBEBEB",
-    foreground = "#141414",
+    background = "#141414",
+    foreground = "#EBEBEB",
     comment    = "#8C8C8C",
 }
 
@@ -186,4 +185,3 @@ set_hl("@punctuation.delimiter", { fg = colors.foreground })
 -- =========================================================
 -- End
 -- =========================================================
-
